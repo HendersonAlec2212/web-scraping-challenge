@@ -7,9 +7,13 @@
       
         <!-- style sheets --> 
         <!--  <link rel="stylesheet" href="../static/bootstrap.min.css"/> -->
-        <!--  <link rel="stylesheet" href="../static/styles.css"/> -->
-        <link href="{{ url_for('static', filename='../static/bootstrap.min.css') }}" />
-        <link href="{{ url_for('static', filename='../static/style.css') }}" />
+        <!--  <link rel="stylesheet" href="../static/style.css"/> -->
+
+        <link rel="stylesheet" href="../static/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../static/style.css"/>
+
+        <link href="{{ url_for('static', filename='bootstrap.min.css') }}" />
+        <link href="{{ url_for('static', filename='style.css') }}" />
 
 
         <!-- Title -->
@@ -61,8 +65,8 @@
 
                 {% for hemisphere in mars.hemispheres %}
                 <div class="col-md-3 col-lg-3">
-                  <div class="thumbnail img-responsive">
-                    <img src="{{hemisphere.jpg_url}}">
+                  <div class="thumbnail">
+                    <img class="responsive-thumbnail" src="{{hemisphere.jpg_url}}">
                       <h3>{{hemisphere.title}}</h3>
                   </div>
                 </div>

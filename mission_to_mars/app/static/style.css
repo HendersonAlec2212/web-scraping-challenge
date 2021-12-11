@@ -36,6 +36,15 @@
     max-width: 100%;
     height: auto;
 }
+.responsive-thumbnail {
+    max-width: 25%;
+    height: auto;
+}
+.img-size {
+    height: 600px;
+    width: 600px;
+}
+
 .button {
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -56,7 +65,6 @@
     border-bottom: 3px solid rgb(255, 255, 255);
 }
 .thumbnail {
-    display: block;
     padding: 5px;
     margin-bottom: 20px;
     background-color: rgb(54, 54, 54);
