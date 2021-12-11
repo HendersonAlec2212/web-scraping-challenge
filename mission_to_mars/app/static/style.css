@@ -37,8 +37,8 @@
     height: auto;
 }
 .responsive-thumbnail {
-    max-width: 25%;
-    height: auto;
+    width: 10%;
+    height: 10%;
 }
 .img-size {
     height: 600px;
